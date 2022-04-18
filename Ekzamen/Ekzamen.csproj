@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA8AB91F-46BA-4AD6-BF62-0F66092B83E1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Ekzamen</RootNamespace>
+    <AssemblyName>Ekzamen</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EkzamenDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EkzamenDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EkzamenDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EkzamenDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EkzamenDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EkzamenDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EkzamenDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EkzamenDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EkzamenDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EkzamenDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EkzamenDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EkzamenDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Otmena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otmena.Designer.cs">
+      <DependentUpon>Otmena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Udalenie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Udalenie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Katalog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Katalog.Designer.cs">
+      <DependentUpon>Katalog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Korzina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Korzina.Designer.cs">
+      <DependentUpon>Korzina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dobavlenie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dobavlenie.Designer.cs">
+      <DependentUpon>Dobavlenie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Updateqw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Updateqw.Designer.cs">
+      <DependentUpon>Updateqw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zakaz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zakaz.Designer.cs">
+      <DependentUpon>Zakaz.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Katalog.resx">
+      <DependentUpon>Katalog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Korzina.resx">
+      <DependentUpon>Korzina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dobavlenie.resx">
+      <DependentUpon>Dobavlenie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Otmena.resx">
+      <DependentUpon>Otmena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Udalenie.resx">
+      <DependentUpon>Udalenie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Updateqw.resx">
+      <DependentUpon>Updateqw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zakaz.resx">
+      <DependentUpon>Zakaz.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="EkzamenDataSet.xsc">
+      <DependentUpon>EkzamenDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EkzamenDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EkzamenDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EkzamenDataSet.xss">
+      <DependentUpon>EkzamenDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EkzamenDataSet1.xsc">
+      <DependentUpon>EkzamenDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EkzamenDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EkzamenDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EkzamenDataSet1.xss">
+      <DependentUpon>EkzamenDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EkzamenDataSet2.xsc">
+      <DependentUpon>EkzamenDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="EkzamenDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EkzamenDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EkzamenDataSet2.xss">
+      <DependentUpon>EkzamenDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="EkzamenDataSet3.xsc">
+      <DependentUpon>EkzamenDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="EkzamenDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EkzamenDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EkzamenDataSet3.xss">
+      <DependentUpon>EkzamenDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="EkzamenDataSet4.xsc">
+      <DependentUpon>EkzamenDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="EkzamenDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EkzamenDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EkzamenDataSet4.xss">
+      <DependentUpon>EkzamenDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="EkzamenDataSet5.xsc">
+      <DependentUpon>EkzamenDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="EkzamenDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EkzamenDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EkzamenDataSet5.xss">
+      <DependentUpon>EkzamenDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Долгая прогулка.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Король шрамов.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Красношейка.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Крещение огнем.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Мизери.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Повелитель мух.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ритуал.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Странствия убийцы.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Творец заклинаний.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Финист - ясный сокол.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Цветы для Элджернона.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимо2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок3.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок32.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок21JPG.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок213.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимокуцк.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимоуцй2к.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимууу3ок.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Сним234ок.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Сни23431мок.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Странстк.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Творецццц.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимовыпауцк34к.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимвыапок.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\СнимССССССок.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимцу234ок.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Тестоск.JPG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
